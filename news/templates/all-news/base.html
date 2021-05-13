@@ -8,6 +8,7 @@
     {% else %}
     <title> Moringa Tribune </title>
     {% endif %} {% block styles%} {% bootstrap_css%}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'css/basenews.css'%}"> {%endblock%}
 
 </head>
@@ -15,7 +16,8 @@
 <body>
     {% include "navbar.html" %} {% block content %}
     <h1 class="text-center">News for {{date|date:"l d-F Y"}}</h1> {%endblock%} {% block scripts %}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     {% bootstrap_javascript %} {% endblock %}
 </body>
 

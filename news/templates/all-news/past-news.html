@@ -5,13 +5,15 @@
     {% for news_item in news %}
 
     <div class="row">
-        <div class="col-md-2"></div>
         <!-- displaying News articles -->
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
             <h2 class="text-center"> {{ news_item.title }} </h2>
             <p class="text-center" {{news_item.post}}></p>
-            <div class="col-md-2"></div>
+        </div>
 
+        <!--Display news Article images  -->
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <img src="{{news_item.photo_url|default_if_none:'#' }}" class="img-responsive" alt="Image">
         </div>
 
     </div>
