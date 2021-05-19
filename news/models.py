@@ -60,3 +60,6 @@ class Article(models.Model):
     def photo_url(self):
         if self.article_image and hasattr(self.article_image, 'url'):
             return self.article_image.url
+class NewsLetterRecipients(models.Model):
+    name=models.CharField(max_length=30)
+    email=models.EmailField()
