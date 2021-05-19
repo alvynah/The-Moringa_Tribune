@@ -38,6 +38,7 @@ ALLOWED_HOSTS = 'veetribune.herokuapp.com'
 INSTALLED_APPS = [
     'news.apps.NewsConfig',
     'bootstrap4',
+    'tinymce',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
