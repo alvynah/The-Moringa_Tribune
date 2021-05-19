@@ -30,7 +30,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG',default=False,cast=bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = 'veetribune.herokuapp.com'
 
 
 # Application definition
@@ -89,7 +89,7 @@ if config('MODE')=="dev":
             'USER': config('DB_USER'),
             'PASSWORD': config('DB_PASSWORD'),
             'HOST': config('DB_HOST'),
-            'PORT': '',
+            'PORT': 5432,
         }
     }
 else:
