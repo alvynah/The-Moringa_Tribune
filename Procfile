@@ -1,1 +1,2 @@
-web: gunicorn your_project_name.wsgi
+web: gunicorn tribune.wsgi --log-file-
+
