@@ -1,4 +1,4 @@
-{%extends 'all-news/base.html'%}{% load bootstrap4%} {%block content%} {{block.super}}
+{%extends 'all-news/base.html'%}{% load bootstrap4%}{% load static%} {%block content%} {{block.super}}
 <div class="container">
 
     <!-- Looping through news   -->
@@ -31,4 +31,6 @@
     </div>
 
 </div>
-{%endblock%}
+{%endblock%} {% block scripts %} {{block.super}}
+<script type="text/javascript" src="{%static 'js/newsletter.js'%}"></script>
+{% endblock %}
