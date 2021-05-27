@@ -11,6 +11,7 @@ urlpatterns=[
     re_path(r'^article/(\d+)', views.article, name='article'),
     re_path(r'^new/article', views.new_article, name='new-article'),
     re_path(r'^ajax/newsletter', views.newsletter, name='newsletter'),
+    path('api/merch/', views.MerchList.as_view())
     ]
 if settings.DEBUG:
     urlpatterns+= static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
